@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1><i class="fa-regular fa-credit-card"></i>Expense Tracker</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, modi.
+      </p>
+      <!-- form -->
+      <div id="expense-form-container">
+        <h2>&plus; Add Expense</h2>
+        <form action="POST" id="expense-form">
+          <label
+            >Item
+            <input
+              type="text"
+              name="item"
+              id="item-input"
+              placeholder="groceries"
+            />
+          </label>
+          <label
+            >Cost(USD)
+            <input type="text" name="cost" id="cost-input" placeholder="100" />
+          </label>
+          <button type="submit">Add</button>
+        </form>
+      </div>
+
+      <!-- list -->
+      <ul id="expense-list"></ul>
+    </section>
+    <!-- scripts -->
+    <script
+      src="https://kit.fontawesome.com/89a0f67fd8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

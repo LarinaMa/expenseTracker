@@ -1,0 +1,89 @@
+.container {
+  width: min(100% - 6rem, 40rem);
+  margin-inline: auto;
+  padding-block: var(--sp-48);
+}
+
+h2 {
+  margin-bottom: var(--sp-20);
+}
+
+p {
+  margin-block: var(--sp-12) var(--sp-48);
+}
+
+p,
+.cost {
+  color: var(--gray);
+}
+
+.fa-credit-card {
+  color: var(--purple);
+  margin-right: var(--sp-8);
+}
+
+/* form */
+
+#expense-form-container {
+  background-color: var(--light-purple);
+  padding: var(--sp-32);
+  border-radius: var(--br);
+}
+
+#expense-form,
+label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-20);
+}
+
+label {
+  gap: var(--sp-8);
+}
+
+input,
+button {
+  border: solid 1px var(--purple);
+  border-radius: var(--br-sm);
+  padding: var(--sp-12);
+}
+
+button {
+  color: white;
+  background-color: var(--purple);
+  padding-inline: var(--sp-48);
+}
+
+/* list */
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+#expense-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 150px) auto minmax(0, 100px) minmax(0, 40px) minmax(
+      0,
+      40px
+    );
+  align-items: center;
+  gap: calc(var(--sp-2) * 5);
+  border-bottom: solid 1px var(--muted-purple);
+  padding-block: var(--sp-16);
+  text-transform: capitalize;
+}
+#expense-list li button {
+  font-size: 14px;
+  line-height: 1;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.071);
+  border: none;
+  padding: var(--sp-2);
+  aspect-ratio: 1;
+}
+
+#expense-list li button:last-of-type {
+  color: rgb(0, 159, 34);
+  background-color: rgba(1, 174, 30, 0.071);
+}

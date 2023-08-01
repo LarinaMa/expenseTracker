@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --gray: #67686c;
+  --dark-gray: #383838;
+
+  --light-purple: #f3f1fd;
+  --muted-purple: #bfb8d8;
+  --purple: #5e40f5;
+
+  --br: 10px;
+  --br-sm: 5px;
+
+  --sp-2: 2px
+  --sp-8: 8px;
+  --sp-12: 12px;
+  --sp-16: 16px;
+  --sp-20: 20px;
+  --sp-24: 24px;
+  --sp-32: 32px;
+  --sp-48: 48px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+button,
+input {
+  font-size: inherit;
+}
+button{
+  cursor: pointer;
+}
+label,
+button {
+  font-weight: 500;
+}
